@@ -25,22 +25,26 @@ $defMargin:10px;
 
 header, footer { 
 	@include column(12);
+	@include mobileColumn(4);
 	@extend .c-box;
 }
 
 nav { 
 	@include column(2);
 	@extend .c-box;
+	@include mobileColumn(4);
 }
 
 article { 
 	@include column(8);
 	@extend .c-box;
+	@include mobileColumn(4);
 }
 
 aside { 
 	@include column(2);
 	@extend .c-box;
+	@extend .hide-for-small;
 }
 
 
@@ -62,6 +66,14 @@ aside {
 	@extend .box2;
 	
 }
+
+@media screen and (max-width:676px) {
+	
+	.header-container , .footer-container {
+		background:none!important;
+}
+}
+
 
 //ie6 hack
 .lt-ie7 aside {margin-right:-10px;}
