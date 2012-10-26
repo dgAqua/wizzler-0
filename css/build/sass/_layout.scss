@@ -1,0 +1,67 @@
+$defHeight:400px;
+$defMargin:10px;
+
+
+.c-box {
+	background-color:#ccc;
+}
+.box2 {
+	background-color:#dedede;
+	padding:$defMargin;
+	behavior: url('css/build/PIE.htc');
+  	position: relative;
+	@include border-radius(5px);
+	@include single-box-shadow;
+	@include single-text-shadow;
+	@include background-image(linear-gradient(#ffffff, #cccccc));
+	-pie-background: linear-gradient(top, #ffffff, #cccccc); /*PIE*/	
+}
+
+
+
+#wrapper {
+	@include outerRow();
+}
+
+header, footer { 
+	@include column(12);
+	@extend .c-box;
+}
+
+nav { 
+	@include column(2);
+	@extend .c-box;
+}
+
+article { 
+	@include column(8);
+	@extend .c-box;
+}
+
+aside { 
+	@include column(2);
+	@extend .c-box;
+}
+
+
+.header-container {
+	height:60px;
+	@extend .box2;
+	margin-bottom:$defMargin;;
+}
+
+.nav-container, .article-container, .aside-container{
+	height:$defHeight;
+	@extend .box2;
+	margin-bottom:$defMargin;;
+}
+
+
+.footer-container {
+	height:40px;
+	@extend .box2;
+	
+}
+
+//ie6 hack
+.lt-ie7 aside {margin-right:-10px;}
