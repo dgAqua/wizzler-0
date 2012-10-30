@@ -2,25 +2,28 @@ $defHeight:400px;
 $defMargin:10px;
 
 
+
 .c-box {
 	background-color:#ccc;
 }
 .box2 {
 	background-color:#dedede;
+	margin-bottom:$defMargin;
 	padding:$defMargin;
-	behavior: url('css/build/PIE.htc');
-  	position: relative;
-	@include border-radius(5px);
-	@include single-box-shadow;
-	@include single-text-shadow;
-	@include background-image(linear-gradient(#ffffff, #cccccc));
-	-pie-background: linear-gradient(top, #ffffff, #cccccc); /*PIE*/	
+	//behavior: url('css/build/PIE.htc');
+  	//position: relative;
+	//@include border-radius(5px);
+	//@include single-box-shadow;
+	//@include single-text-shadow;
+	//@include background-image(linear-gradient(#ffffff, #cccccc));
+	//-pie-background: linear-gradient(top, #ffffff, #cccccc); /*PIE*/	
 }
 
 
 
 #wrapper {
-	@include outerRow();
+	@include outerRow();	
+
 }
 
 header, footer { 
@@ -29,35 +32,42 @@ header, footer {
 	@extend .c-box;
 }
 
+
+
 nav { 
-	@include column(2);
+	@include column(12);
 	@extend .c-box;
 	@include mobileColumn(4);
+
+	
 }
 
-article { 
-	@include column(8);
+article {
+	@include column(7);
 	@extend .c-box;
 	@include mobileColumn(4);
 }
 
 aside { 
-	@include column(2);
+	@include column(5);
 	@extend .c-box;
 	@extend .hide-for-small;
 }
 
 
+
+
 .header-container {
 	height:60px;
-	@extend .box2;
-	margin-bottom:$defMargin;;
+	@extend .box2;		
 }
 
-.nav-container, .article-container, .aside-container{
+.article-container, .aside-container{
 	height:$defHeight;
-	@extend .box2;
-	margin-bottom:$defMargin;;
+	@extend .box2;	
+}
+.nav-container {
+@extend .box2;
 }
 
 
@@ -66,13 +76,13 @@ aside {
 	@extend .box2;
 	
 }
-
 @media screen and (max-width:676px) {
 	
-	.header-container , .footer-container {
-		background:none!important;
+
 }
-}
+
+
+
 
 
 //ie6 hack

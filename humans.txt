@@ -1,8 +1,21 @@
-/* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
-/* zurb.com */
-/* humanstxt.org */
+built using:
+html5boilerplate
+foundation3/ sass
+compass
+pie.htc
+boxsizing.htc
+CSS3
+HTML5
+jquerymobile
 
-/* SITE */
-  Standards: HTML5, CSS3
-  Components: jQuery, Orbit, Reveal
-  Software: Coda, Textmate, Git
+to be responsive then for mobile to be optionally switch to jquerymobile
+
+aim to be complient to browsers
+Chrome latest
+Safari latest
+Firefox latest
+IE latest
+IE8,IE7,
+limited but usable IE6
+
+first commit Daren Grout : 26.10.12

@@ -26,7 +26,6 @@
         <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/customise.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     
-    
 	
 
 
@@ -41,38 +40,27 @@
 <div data-role="page" class="show-for-small">
 <div data-role="header"><h1>Mob site</h1></div>
 <div data-role="content">
-<a href="page2.htm" data-transition="slide" data-role="button">page 2!</a>
+<a href="index.htm" data-transition="slide" data-direction="reverse" data-role="button">page 1</a>
 </div>
 <div data-role="footer" data-position="fixed"><h2>footer</h2></div>
 </div>
 <!-- /mobile site-->
 
 
-
-
-
 <div id="wrapper"  class="hide-for-small">
-
-<header>
-<div class="header-container">...</div>
-</header>
-
-<nav>
-<div class="nav-container">...</div>
+<header ><div class="header-container">page 2!...</div></header>
+<nav><div class="nav-container">
+<a href="index.htm" rel="external" >link to page 1</a>
+</div>
 </nav>
-
-
-
 <article >
-<div class="article-container">...</div>
+<div class="article-container">article...</div>
 </article>
-
 <aside>
-<div class="aside-container">...</div>
+<div class="aside-container">aside...</div>
 </aside>
-
-<footer >
-<div class="footer-container">...</div>
+<footer>
+<div class="footer-container">footer...</div>
 </footer>
 
 
@@ -99,7 +87,6 @@
 	<script src="js/foundation/jquery.foundation.topbar.js"></script>
 	<script src="js/foundation/jquery.placeholder.js"></script>-->
   <!-- Application Javascript, safe to override -->
-
-<script src="js/foundation/app.js"></script>
+  <script src="js/foundation/app.js"></script>
 </body>
 </html>
